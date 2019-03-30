@@ -4,11 +4,17 @@ PRE-REQUISITES:
 1. docker 
 2. docker-compose to be installed in the machine.
 3. ensure below ports are un-used : 
+
     a. port for employee service mysql database - 3307 
+    
     b. port for event service mysql database - 3308
+    
     c. RabbitMQ message broker uses :- 5672 & 15672 
+    
     d. Employee Service endpoints hosted on  - 9094
+    
     e. Event Service endpoints hosted on - 9095
+    
     f. Integration tests port - 52310, 51010
 
 Step to start the process: 
