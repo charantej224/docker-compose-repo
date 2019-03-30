@@ -1,9 +1,9 @@
 # docker-compose-repo
 
-PRE-REQUISITES:
-1. docker 
-2. docker-compose to be installed in the machine.
-3. ensure below ports are un-used : 
+## PRE-REQUISITES:
+### 1. docker 
+### 2. docker-compose to be installed in the machine.
+### 3. ensure below ports are un-used : 
 
     a. port for employee service mysql database - 3307 
     
@@ -17,22 +17,22 @@ PRE-REQUISITES:
     
     f. Integration tests port - 52310, 51010
 
-Step to start the process: 
+## Step to start the process: 
 This is the repository for the required docker compose files to create containers.
 containers required :-
 1. mysql - Employee MicroService dedicated database. 
 2. mysql - Department MicroService dedicated database.
 3. rabbitmq - message broker between employee and department micro services.
 
-step1: clone the repository
+### step1: clone the repository
 
 git clone https://github.com/charantej224/docker-compose-repo.git
 
-step2: change the directory
+### step2: change the directory
 
 cd docker-compose-repo/
 
-step3: run docker compose using command below (-d to start as demon process)
+### step3: run docker compose using command below (-d to start as demon process)
 
 docker-compose -f consolidated/docker-compose.yml up -d
 
